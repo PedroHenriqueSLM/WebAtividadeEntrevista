@@ -28,7 +28,7 @@ namespace WebAtividadeEntrevista.Controllers
             BoCliente bo = new BoCliente();
 
             if (bo.VerificarExistencia(model.CPF, model.Id))
-                ModelState.AddModelError("", "CPF inválido, pois já consiste no banco de dados");
+                ModelState.AddModelError("", "CPF inválido, pois já consiste no banco de dados.");
 
             if (!this.ModelState.IsValid)
             {
@@ -57,7 +57,7 @@ namespace WebAtividadeEntrevista.Controllers
                 });
 
            
-                return Json("Cadastro efetuado com sucesso");
+                return Json("Cadastro efetuado com sucesso.");
             }
         }
 
@@ -67,7 +67,7 @@ namespace WebAtividadeEntrevista.Controllers
             BoCliente bo = new BoCliente();
 
             if (bo.VerificarExistencia(model.CPF, model.Id))
-                ModelState.AddModelError("", "CPF inválido, pois já consiste no banco de dados");
+                ModelState.AddModelError("", "CPF inválido, pois já consiste no banco de dados.");
        
             if (!this.ModelState.IsValid)
             {
@@ -95,7 +95,7 @@ namespace WebAtividadeEntrevista.Controllers
                     CPF = model.CPF
                 });
                                
-                return Json("Cadastro alterado com sucesso");
+                return Json("Cadastro alterado com sucesso.");
             }
         }
 
